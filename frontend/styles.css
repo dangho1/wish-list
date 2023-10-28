@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f1f3f6;
+  color: #1c2430;
+  margin: 0;
+}
+
+.background-video {
+  width: 100vw;
+  height: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-bottom: 2px;
+  margin-left: 10px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.carousel {
+  .control-dots {
+    display: none;
+  }
+}
+
+.control-arrow {
+  display: none;
+}
+
+.carousel-status {
+  display: none;
+}
+
+.slide {
+  background-color: rgb(22 78 99);
+}
+.iframe-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+header {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  color: #515e72;
+}
+
+main {
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+main > p {
+  margin-bottom: 2rem;
+}
+
+main > div {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+pre {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+li {
+  list-style-type: none;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+}
