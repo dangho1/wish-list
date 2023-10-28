@@ -1,4 +1,3 @@
-import { DMEvent } from "../../types/DMEvent";
 
 export default function handler(req, res) {
     // Get data submitted in request's body.
@@ -10,7 +9,6 @@ export default function handler(req, res) {
     
     const name: string = body.name;
     const email: string = body.email;
-    const event: DMEvent = body.event;
     
     
 
